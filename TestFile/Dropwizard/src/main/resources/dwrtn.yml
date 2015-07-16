@@ -1,0 +1,28 @@
+# Database settings.
+mongohost: 127.0.0.1
+mongoport: 27017
+mongodb: demo
+
+server:
+    maxThreads: 200
+    minThreads: 200
+    maxQueuedRequests: 9999
+    requestLog:
+      appenders: []
+
+# Logging settings.
+logging:
+  level: INFO
+  loggers:
+    com.ipass.dwfile: DEBUG
+    org.hibernate.SQL: ALL
+
+  appenders:
+    - type: console
+    - type: file
+      threshold: DEBUG
+      logFormat: "%-6level [%d{HH:mm:ss.SSS}] [%t] %logger{5} - %X{code} %msg %n"
+      currentLogFilename: /tmp/application.log
+      archivedLogFilenamePattern: /tmp/application-%d{yyyy-MM-dd}-%i.log.gz
+      archivedFileCount: 7
+      timeZone: UTC

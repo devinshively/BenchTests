@@ -1,0 +1,7 @@
+Took ~3 hours with no prior node.js experience. Had some issues with getting sqlite3 to work the way I expected it to but I just have to get used to callbacks.
+
+curl -X POST -H "Content-Type: application/json" -d '{"title":"test","text":"test text"}' http://localhost:8080/documents
+curl -X GET http://localhost:8080/documents
+curl -X DELETE http://localhost:8080/documents/706e312a-c912-4b8b-a3e5-8d83f6b6143b
+curl -X GET http://localhost:8080/documents/706e312a-c912-4b8b-a3e5-8d83f6b6143b
+curl -X UPDATE -H "Content-Type: application/json" -d '{"title":"test change","text":"test text change"}' http://localhost:8080/documents/706e312a-c912-4b8b-a3e5-8d83f6b6143b

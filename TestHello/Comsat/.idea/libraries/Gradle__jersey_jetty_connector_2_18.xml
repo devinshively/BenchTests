@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: jersey-jetty-connector-2.18">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.connectors/jersey-jetty-connector/2.18/dbdfffd8669d3bf430f43b9d158bb2488d916750/jersey-jetty-connector-2.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.connectors/jersey-jetty-connector/2.18/432f74d0ea0ee620130ad5538950199a745f0dd1/jersey-jetty-connector-2.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

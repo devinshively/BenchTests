@@ -1,0 +1,5 @@
+com/ipass/dwfile/DWFileResource.class
+com/ipass/dwfile/Network.class
+com/ipass/dwfile/DWFileConfiguration.class
+com/ipass/dwfile/MongoManaged.class
+com/ipass/dwfile/DWFileApplication.class

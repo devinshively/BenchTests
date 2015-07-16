@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'io.ratpack:ratpack-gradle:0.9.18',
+                'com.github.jengelman.gradle.plugins:shadow:1.2.1'
+    }
+}
+
+apply plugin: "io.ratpack.ratpack-java"
+apply plugin: "com.github.johnrengelman.shadow"
+apply plugin: "idea"
+
+sourceCompatibility = 1.8
+version = '1.0-SNAPSHOT'
+
+if (!JavaVersion.current().java8Compatible) {
+    throw new IllegalStateException('''A Haiku:
+                                      |  This needs Java 8,
+                                      |  You are using something else,
+                                      |  Refresh. Try again.'''.stripMargin())
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'http://oss.sonatype.org/content/repositories/snapshots/'
+    }
+    jcenter()
+}
+
+dependencies {
+    compile ratpack.dependency("guice")
+    runtime 'org.slf4j:slf4j-simple:1.7.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
+}
+
+mainClassName = "com.ipass.helloratpack.HelloRatpack"
