@@ -23,14 +23,13 @@ repositories {
 dependencies {
     compile 'io.vertx:vertx-core:3.0.0'
     compile 'io.vertx:vertx-web:3.0.0'
-    compile 'io.vertx:vertx-mongo-client:3.0.0'
 }
 
-// run ./gradlew shadowJar then java -jar build/libs/VertxFile.jar
+// run ./gradlew shadowJar then java -jar build/libs/VertxRTN.jar
 shadowJar {
     classifier = 'fat'
     manifest {
-        attributes 'Main-Class': 'com.ipass.vertxfile.MongoEmbedded'
+        attributes 'Main-Class': 'com.ipass.filevertx.FileVertx'
     }
     mergeServiceFiles {
         include 'META-INF/services/io.vertx.core.spi.VerticleFactory'

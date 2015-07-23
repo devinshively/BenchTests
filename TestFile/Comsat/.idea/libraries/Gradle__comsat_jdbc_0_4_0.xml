@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: comsat-jdbc-0.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.paralleluniverse/comsat-jdbc/0.4.0/7a63bcc04a0ec05d9003c6b85da51efa65a27fbf/comsat-jdbc-0.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.paralleluniverse/comsat-jdbc/0.4.0/d0d7cd256a8211aa92132aed4768ece1c949a97e/comsat-jdbc-0.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

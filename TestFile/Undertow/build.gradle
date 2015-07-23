@@ -1,0 +1,29 @@
+plugins {
+    id 'java' // or 'groovy' Must be explicitly applied
+    id 'com.github.johnrengelman.shadow' version '1.2.1'
+}
+sourceCompatibility = 1.8
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'http://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    compile "io.undertow:undertow-core:1.0.1.Final"
+    compile "io.undertow:undertow-servlet:1.0.1.Final"
+}
+
+shadowJar {
+    classifier = 'fat'
+    manifest {
+        attributes 'Main-Class': 'com.ipass.fileundertow.FileUndertow'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
+}
